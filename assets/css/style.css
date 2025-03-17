@@ -387,7 +387,7 @@ h4 {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 
 }
 
@@ -439,7 +439,7 @@ h4 {
 }
 
 #about {
-  padding: 80px;
+  padding: 80px 0;
 }
 
 #about img {
@@ -579,6 +579,7 @@ h4 {
   height: 48px;
   background-color: var(--primary);
   margin: 50px;
+  text-align: center;
 }
 
 
@@ -596,6 +597,9 @@ h4 {
   opacity: 0.15s;
   color: var(--black);
 
+}
+#image img{
+  width: 100%;
 }
 
 .swiper {
@@ -861,4 +865,21 @@ input[type="submit"] {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #724029;
   padding: 5px;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000082;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+.modal .open{ 
+  display: flex;
+
+}
+.modal .content{
+  background-color: white;
 }

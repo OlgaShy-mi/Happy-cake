@@ -72,7 +72,7 @@
           </h4>
 
         </div>
-        <a href="advice.html">Отримати консультацію</a>
+        <a id="openModal" href="advice.html">Отримати консультацію</a>
       </div>
     </section>
     <section id="about">
@@ -288,20 +288,20 @@
           <hr>
         </div>
         <div class="row">
-          <div class="col-8">
+          <div class="col-md-8 col-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5444741.537530338!2d25.901224760527853!3d48.21499022363922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDRl9C90LA!5e0!3m2!1suk!2sua!4v1740578480603!5m2!1suk!2sua"
               width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="col-4 footer-link">
+          <div class="col-md-4 col-12 footer-link">
             <div class="card-title">
               <h2>Контакти</h2>
               <ul>
                 <li><a href="https://maps.app.goo.gl/UAhEMQyZyBXxrHkH8" target="_blank"><i
                       class="fa-solid fa-location-dot"></i> Location</a>
                 </li>
-                <p >Вінниця, пл. Стуса, 5</p>
+                <li>Вінниця, пл. Стуса, 5</li>
                 <li><a href="tel:+380962172642" target="_blank"><i class="fa-solid fa-phone"></i></i> +380962172642</a>
                 </li>
                 <li><a href="mailto:mail@example.com" target="_blank"><i class="fa-regular fa-envelope"></i>
@@ -357,6 +357,27 @@
     </div>
   </div>
 
+  <div class="modal">
+    <div class="content">
+      <section id="contacts">
+        <div class="section-title">
+        
+          <h2 data-aos="zoom-in"><i class="fa-solid fa-cake-candles" style="color: #f20785;"></i> Залиште ваш номер телефону і наш менеджед зв'яжеться з вами протягом 5 хв.</h2>
+        </div>
+        <i class="fa-solid fa-cake-candles" style="color: #f20785;"></i>
+  
+        <div class="input-group">
+          <span class="input-group-text">Ваш телефон</span>
+          <input type="tel" aria-label="Ваш телефон" placeholder="0632843486" class="form-control">
+  
+          
+        </div>
+      </section>
+        
+      
+    </div>
+  </div>
+
 
 
 
@@ -380,6 +401,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  
+
+ 
 
 </body>
 

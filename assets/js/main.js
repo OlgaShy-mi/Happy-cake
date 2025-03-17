@@ -233,5 +233,19 @@ decrementBtn.addEventListener('click', () => {
 buyButton.addEventListener('click', () => {
     alert(`Куплено ${quantity} шт. на суму ${unitPrice * quantity} ₴`);
 });
+// вікно....,,,
+
+document.querySelector("#openModal").addEventListener('click', function(e){
+  e.preventDefault();
+  document.querySelector('.modal').classList.toggle('open');
+
+});
+document.querySelector('.modal').addEventListener('click', function(){
+  document.querySelector('.modal').classList.remove('open');
+
+});
+document.querySelector('.modal .content').addEventListener('click', function(e){
+  e.stopPropagation();
+})
 
 (jQuery);
